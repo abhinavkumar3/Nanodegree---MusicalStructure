@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Music Application</string>
+    <string name="album">Albums</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="status">Status</string>
+    <string name="songName">Hum to Ud Gaye</string>
+    <string name="playStatus">Song Playing</string>
+    <string name="pauseStatus">Song Paused</string>
+    <string name="stopStatus">Song Stopped</string>
+    <string name="endStatus">Song Ended</string>
+</resources>
