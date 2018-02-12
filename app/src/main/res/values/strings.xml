@@ -10,4 +10,8 @@
     <string name="pauseStatus">Song Paused</string>
     <string name="stopStatus">Song Stopped</string>
     <string name="endStatus">Song Ended</string>
+    <string name="paypal">PayPal</string>
+    <string name="google">Google Wallet</string>
+    <string name="bitcoin">BitCoin</string>
+    <string name="buybutton">Proceed to Payment</string>
 </resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apk2try.musicalstructure.Play">
+
+    <ImageButton
+        android:id="@+id/playmusic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/play"
+        style="@style/AppStyle"/>
+    <TextView
+        android:id="@+id/playStatus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text = "This window will show that the window will show Playing window"
+        style="@style/AppStyle"/>
+
+
+</LinearLayout>

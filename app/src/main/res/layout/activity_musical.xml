@@ -9,117 +9,119 @@
     android:background="#FBF8EF"
     tools:context="com.apk2try.musicalstructure.Musical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:padding="2dp"
+        android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
                 android:background="@color/background"
                 android:padding="2dp"
-                android:orientation="vertical">
+                android:layout_weight="1">
 
-                <ImageButton
-                    android:id="@+id/play"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/play"/>
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/play"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.2"
-                    android:text="@string/play"
-                    android:gravity="center"
                     android:background="@color/colorAccent"
-                    android:textAppearance="?android:textAppearanceLarge"/>
+                    style="@style/AppStyle"
+                    android:text="@string/play"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:background="@color/background"
-                    android:padding="2dp"
-                    android:layout_weight="1">
-
-                    <ImageButton
-                        android:id="@+id/pause"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/pause"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="@color/colorAccent"
-                        android:textAppearance="?android:textAppearanceLarge"
-                        android:text="@string/pause"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:background="@color/background"
-                    android:padding="1dp"
-                    android:layout_weight="1">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/background"
+                android:padding="2dp"
+                android:layout_weight="1">
 
                 <ImageButton
-                    android:id="@+id/stop"
+                    android:id="@+id/album"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/stop"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/music"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:background="@color/colorAccent"
-                        android:textAppearance="?android:textAppearanceLarge"
-                        android:text="@string/stop"/>
-
-                </LinearLayout>
+                        style="@style/AppStyle"
+                        android:text="@string/album"/>
 
             </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:padding="2dp"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             android:background="@color/background"
-            android:padding="1dp"
-            android:orientation="vertical">
+            android:padding="2dp"
+            android:layout_weight="1">
 
-                    <TextView
-                        android:id="@+id/status"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:text="@string/status"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:textColor="#000000"
-                        android:textAppearance="?android:textAppearanceLarge"
-                        android:background="@color/status"/>
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/pause"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:text="@string/songName"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:textColor="#000000"
-                        android:textAppearance="?android:textAppearanceLarge"
-                        android:background="@color/songName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                style="@style/AppStyle"
+                android:text="@string/pause"/>
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/background"
+            style="@style/AppStyle"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/stop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/stop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppStyle"
+                android:background="@color/colorAccent"
+                android:text="@string/stop"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
