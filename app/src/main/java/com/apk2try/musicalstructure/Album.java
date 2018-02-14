@@ -24,8 +24,8 @@ public class Album extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // Create a new intent to open the {@link Payment Activity}
-                Intent paymentIntent = new Intent(Album.this, Payment.class);
+                // Create a new intent to open the {@link PaymentActivity Activity}
+                Intent paymentIntent = new Intent(Album.this, PaymentActivity.class);
 
                 // Start the new activity
                 startActivity(paymentIntent);
@@ -39,8 +39,8 @@ public class Album extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // Create a new intent to open the {@link Payment Activity}
-                Intent paymentIntent = new Intent(Album.this, Payment.class);
+                // Create a new intent to open the {@link PaymentActivity Activity}
+                Intent paymentIntent = new Intent(Album.this, PaymentActivity.class);
 
                 // Start the new activity
                 startActivity(paymentIntent);
